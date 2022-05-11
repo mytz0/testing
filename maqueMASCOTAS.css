@@ -1,0 +1,84 @@
+*{margin:0;
+padding: 0;
+}
+
+input[type=text], select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0);
+  border-radius: 2em;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+input[type=button] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  float: left;
+ 
+}
+
+#section {
+	 height: 370px;
+	  width: 45%;
+	border-radius: 1em;
+	float:left;
+    margin: 1em;
+}
+
+#aside {
+	 height: 370px;
+	width: 45%;
+	border-radius: 1em;
+	float:right;
+	margin: 1em;
+}
+#section2 {
+	 height: 260px;
+	  width: 45%;
+	border-radius: 1em;
+	float:left;
+    margin: 1em;
+}
+#aside2 {
+	 height: 260Px;
+	 width: 45%;
+	border-radius: 1em;
+	float:right;
+margin: 1em;}
+
+#b {
+  border-radius: 5px;
+  background-color: lightgray;
+  margin: 1em;
+  width: 90%;
+  height: 320px;
+  margin: 50px;
+}
+
+#a {
+	
+  border-radius: 5px;
+  background-color: lightgray;
+  margin: 3em;
+  width: 90%;
+  height: 400px;
+  margin: 50px;
+}

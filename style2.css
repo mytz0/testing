@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poopins:wght@200;300;400;500;600;700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poopins', sans-serif;
+}
+
+body{
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(https://e.rpp-noticias.io/xlarge/2020/04/06/444844_924437.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.container{
+height: 800px;
+min-width: 800px;
+display: flex;
+align-items: flex-end;
+}
+
+.icon-image{
+position: relative;
+height: 100px;
+width: 100px;
+background: black;
+border-radius: 50%;
+margin: 0 5px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.icon-image img{
+position: absolute;
+height: 95%;
+width: 95%;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+object-fit: cover;
+border-radius: 50%;
+border: 3px solid orange;
+}
+
+.hover-image{
+position: absolute;
+height: 600px;
+width: 700px;
+bottom: 150px;
+left: 50%;
+transform: translateX(-50%);
+border-radius: 25px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+z-index: 0;
+transition: transform 0.5s, z-index os, left 0.5s;
+transition-delay: 0s, 0.5s, 0.5s;
+pointer-events: none;
+}
+
+.icon-image:hover .hover-image{
+left: -280px;
+z-index: 12;
+transform:translateX(-15px);
+transition: left 0.5s, z-index 0s, transform 0.5s;
+transition-delay: 0s, 0.5s,0.5s; 
+}
+
+.hover-image img{
+position: absolute;
+height: 100%;
+width: 100%;
+object-fit: cover;
+border: 3px solid black;
+border-radius: 25px;
+}
+
+.content{
+position: absolute;
+width: 100%;
+bottom: -10px;
+left: 0;
+padding: 0 10px;
+}
+
+.content:before{
+content: '';
+position: absolute;
+height: 20px;
+width: 20px;
+background: lightblue;
+left: 50%;
+bottom: -1px;
+transform: translateX(-50%) rotate(45deg);
+z-index: -1;
+}
+
+.content .details{
+position: relative;
+background: black;
+padding: 10px;
+border-radius: 12px;
+text-align: center;
+opacity: 0;
+transform: transtalteY(10px);
+}
+
+.icon-image:hover .details{
+transition: all 0.5s ease;
+transform: transtalteY(4px);
+transition-delay: 0.5s;
+opacity: 1;
+}
+
+.content .details:before{
+content: '';
+position: absolute;
+height: 20px;
+width: 20px;
+background: green;
+left: 50%;
+bottom: -10px;
+transform: translateX(-50%) rotate(45deg);
+z-index: -1;
+}
+
+.details .name{
+font-size: 30px;
+color: blue;
+font-weight: 500;
+}
+
+.details .j-name{
+font-size: 25px;
+color: lightblue;
+margin: -3px 0 5px 0;
+}
+
+.last .hover-image{
+transition: none;
+}
+
+.last:hover .hover-image{
+transition: none;
+}
+
+.last:hover .details{
+transition-delay: 0s;
+}
